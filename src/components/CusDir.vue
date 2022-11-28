@@ -1,4 +1,4 @@
-
+<!--local directive-->
 <template>
   <div>
  <h2 v-focus="'red'">this is a sample text</h2>
@@ -7,13 +7,6 @@
 </template>
  
 <script>
-// import Vue from 'vue'
-// Vue.directive('colorful', {
-//   inserted(el,binding) {
-//     el.style.color = binding.value;
-
-//   }
-// })
 
 export default {
   name: "CusDirs",
