@@ -1,15 +1,12 @@
-<!--local directive-->
 <template>
-  <div>
  <h2 v-focus="'red'">this is a sample text</h2>
- <p v-focus="'green'">testing</p>
-</div>
+ <p v-test="'green'">testing</p>
 </template>
  
 <script>
 
 export default {
-  name: "CusDirs",
+  name: "CusDir",
   directives: {
   focus: {
    mounted: (el, binding) => {
