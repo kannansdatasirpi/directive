@@ -1,25 +1,34 @@
 <!--Global directive-->
 <template>
     <div>
-   <h2 v-test="'red'">this is a sample text</h2>
-   <p v-test="'green'">testing</p>
-   <!-- <p v-test="'orange'">testing2</p> -->
+   {{greet}} {{name}}
   </div>
+  <div v-text="channel"></div>
+  <div v-text="name"></div>
+  <input v-focus />
   </template>
    
   <script>
   
   export default {
     name: "CusDirs",
+    data() {
+      return{
+        greet: 'hello',
+        name:'batman',
+        channel:'codeevaluation',
+      }
+    },
     directives: {
-//     focus: {
-//      mounted: (el, binding) => {
-//      // initiate focus for the element 
-//      el.style.color = binding.value;
-//     },
-//    },
+    focus: {
+     mounted: (el, binding) => {
+     // initiate focus for the element 
+     el.style.color = binding.value;
+    },
+   },
+
   }
-  }
+}
   </script>
   
   
